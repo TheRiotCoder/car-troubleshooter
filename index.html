@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CarCare – Troubleshoot & Service Log</title>
+<meta name="description" content="Car troubleshooting guide, warning light and OBD-II lookup, recalls and service log. Works offline.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#f4f6fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CarCare">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<header id="appbar" class="appbar">
+  <div class="appbar-inner">
+    <button id="back" class="icon-btn" aria-label="Back" hidden>‹</button>
+    <h1 id="title">CarCare</h1>
+    <a id="vehicle-chip" class="chip" href="#/garage" aria-label="Select vehicle">No vehicle</a>
+  </div>
+  <div id="offline-bar" class="offline-bar" role="status" hidden>You're offline – saved data and guides still work.</div>
+</header>
+
+<div id="install-banner" class="install-banner" hidden role="region" aria-label="Install app">
+  <div class="install-text"><strong>Install CarCare</strong><span id="install-sub">Add it to your home screen for quick, offline access.</span></div>
+  <button id="install-btn" class="btn primary">Install</button>
+  <button id="install-dismiss" class="icon-btn" aria-label="Dismiss">✕</button>
+</div>
+
+<main id="view" tabindex="-1"></main>
+
+<nav id="tabbar" class="tabbar" aria-label="Main">
+  <a href="#/garage" data-tab="garage"><span class="ti">🚗</span><span>Garage</span></a>
+  <a href="#/diagnose" data-tab="diagnose"><span class="ti">🔧</span><span>Diagnose</span></a>
+  <a href="#/ref" data-tab="ref"><span class="ti">⚠️</span><span>Lights/Codes</span></a>
+  <a href="#/log" data-tab="log"><span class="ti">📒</span><span>Service</span></a>
+  <a href="#/settings" data-tab="settings"><span class="ti">⚙️</span><span>More</span></a>
+</nav>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<div id="modal-root"></div>
+<noscript><p style="padding:1rem">CarCare needs JavaScript enabled.</p></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/diag.js"></script>
+<script src="js/db.js"></script>
+<script src="js/nhtsa.js"></script>
+<script src="js/core.js"></script>
+<script src="js/v-garage.js"></script>
+<script src="js/v-diag.js"></script>
+<script src="js/v-log.js"></script>
+<script src="js/v-more.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
