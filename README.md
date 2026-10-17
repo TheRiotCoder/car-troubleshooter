@@ -1,8 +1,8 @@
 # CarCare – car troubleshooting & service log (PWA)
 
-**Live app:** [CarCare on Netlify](https://jolly-otter-1fd2c7.netlify.app/)
+**Live app:** [CarCare on Cloudflare Pages](https://carcare-1ms.pages.dev/)
 
-Also available on GitHub Pages: [CarCare on GitHub Pages](https://theriotcoder.github.io/car-troubleshooter/)
+Older copies (separate saved data): [Netlify](https://jolly-otter-1fd2c7.netlify.app/) and [GitHub Pages](https://theriotcoder.github.io/car-troubleshooter/)
 
 **Install on your phone**
 - **iPhone:** open the link in Safari, tap Share, then **Add to Home Screen**.
